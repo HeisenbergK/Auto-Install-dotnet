@@ -1,4 +1,4 @@
 install:
-	sudo chmod 777 install.sh
+	sudo chmod 777 install-dotnet.sh
 	./install.sh
 
