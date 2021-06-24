@@ -18,7 +18,17 @@ then
 	apt-get install -y apt-transport-https
 	apt-get update
 	apt-get install -y dotnet-sdk-5.0
-	exit
 else
 	echo "dotnet is already installed :)"
+fi
+
+if ! command -v mcs &> /dev/null
+then
+    echo "mono could not be found"
+    echo "Installing mono"
+    sudo apt update
+    sudo apt install mono-complete
+    exit
+else
+    echo "mono is already installed :)"
 fi
