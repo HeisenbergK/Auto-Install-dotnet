@@ -27,7 +27,7 @@ then
     echo "mono could not be found"
     echo "Installing mono"
     sudo apt update
-    sudo apt install mono-complete
+    sudo apt install -y mono-complete
     exit
 else
     echo "mono is already installed :)"
